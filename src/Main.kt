@@ -170,7 +170,12 @@ fun listAllMonkeys(cageList: List<String>) {
 fun listEmptyCages(cageList: List<String>) {
     println("EMPTY CAGES")
 
-    check(false)    // REPLACE THIS WITH YOUR CODE!
+    for (i in 0..< cageList.size) {
+        if (cageList[i] == (EMPTY){
+            println("- cage ${i + 1}")
+        }
+    // REPLACE THIS WITH YOUR CODE!
+    }
 }
 
 
