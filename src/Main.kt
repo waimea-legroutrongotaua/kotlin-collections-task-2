@@ -25,8 +25,8 @@
  */
 const val NUMCAGES = 8      // The total number of cages
 const val EMPTY = "---"     // Represents an empty cage
-
-
+val monkeyCount = mutableListOf<String>()
+val listEmptyCages = mutableListOf<String>()
 /**
  * Program entry point
  */
@@ -155,7 +155,8 @@ fun listAllCages(cageList: List<String>) {
 fun listAllMonkeys(cageList: List<String>) {
     println("MONKEYS")
 
-    check(false)    // REPLACE THIS WITH YOUR CODE!
+    for (i in 0 ..< placeMonkeyInCage.size) {
+        println("$i: ${placeMonkeyInCage[i]}")    // REPLACE THIS WITH YOUR CODE!
 }
 
 
@@ -228,6 +229,12 @@ fun emptyCount(cageList: List<String>): Int {
  * Tip: the String.padEnd(N) function will help you here
  */
 fun showMonkeyCages(cageList: List<String>) {
+    println("+---------+".repeat(cageList.size)
+        for (i in 0<..<cagelist.size-1) {
+            print("| Cage ${i+1}".padEnd(9))
+            
+        }
+}
 
     check(false)    // REPLACE THIS WITH YOUR CODE!
 }
